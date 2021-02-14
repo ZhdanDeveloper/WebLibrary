@@ -13,7 +13,9 @@ using System.Threading.Tasks;
 using WebLIbrary.DAL.Contexts;
 using Microsoft.EntityFrameworkCore;
 using WebLibray.BLL;
-
+using Swashbuckle;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.Swagger;
 
 namespace WebLibrary_API
 {
@@ -29,11 +31,12 @@ namespace WebLibrary_API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+         
             services.AddAutoMapper();
             services.AddServices();
-            services.AddControllers().AddJsonOptions(x=>x.JsonSerializerOptions.PropertyNamingPolicy = null);
+            services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.PropertyNamingPolicy = null);
             services.AddDbContext<LibraryContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
 
                 
         }
@@ -44,7 +47,9 @@ namespace WebLibrary_API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+              
             }
+
 
             app.UseHttpsRedirection();
 

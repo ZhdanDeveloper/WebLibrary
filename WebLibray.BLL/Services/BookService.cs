@@ -28,6 +28,13 @@ namespace WebLibray.BLL.Services
             return mapper.Map<BookDTO>(await UoW.BookRepository.CreateAsync(BookToCreate));
         }
 
+        public async Task<BookDTO> DeleteBookById(int Id)
+        {
+            var BookToDelete = await UoW.BookRepository.GetForDeleting(Id);
+            return mapper.Map<BookDTO>(await UoW.BookRepository.DeleteAsync(BookToDelete));
+           
+        }
+
         public async Task<List<BookDTO>> GetAllBooks()
         {
             return mapper.Map<List<BookDTO>>(await UoW.BookRepository.GetAllAsync());

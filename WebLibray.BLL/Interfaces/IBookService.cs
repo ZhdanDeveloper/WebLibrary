@@ -12,6 +12,7 @@ namespace WebLibray.BLL.Interfaces
         Task<BookDTO> GetBookById(int Id);
         Task<List<BookDTO>> GetAllBooks();
         Task<BookDTO> CreateBook(BookCreateDTO book);
+        Task<BookDTO> DeleteBookById(int Id);
 
 
     }
