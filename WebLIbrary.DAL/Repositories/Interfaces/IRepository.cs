@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebLIbrary.DAL.Interfaces
+namespace WebLIbrary.DAL.Repositories.Interfaces
 {
     public interface IRepository<T> where T : class
     {
