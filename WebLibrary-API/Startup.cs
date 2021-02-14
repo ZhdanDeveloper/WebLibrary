@@ -13,9 +13,6 @@ using System.Threading.Tasks;
 using WebLIbrary.DAL.Contexts;
 using Microsoft.EntityFrameworkCore;
 using WebLibray.BLL;
-using Swashbuckle;
-using Microsoft.OpenApi.Models;
-using Swashbuckle.Swagger;
 
 namespace WebLibrary_API
 {
