@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebLIbrary.DAL\WebLIbrary.DAL.csproj" />
+    <ProjectReference Include="..\WebLIbrary.DAL\WebLibray.DAL.csproj" />
+    <ProjectReference Include="..\WebLibray.BLL\WebLibrary.BLL.csproj" />
   </ItemGroup>
 
   <ItemGroup>
