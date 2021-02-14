@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebLIbrary.DAL.Contexts;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebLibrary_API
 {
@@ -26,6 +28,8 @@ namespace WebLibrary_API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<LibraryContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
