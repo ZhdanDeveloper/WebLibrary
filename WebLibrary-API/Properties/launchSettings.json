@@ -5,7 +5,7 @@
     "WebLibrary_API": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "",//SetMyName
+      "launchUrl": "api/books/3",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

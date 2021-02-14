@@ -15,7 +15,7 @@ namespace WebLIbrary.DAL.Configurations
             builder.HasIndex(x => new { x.Name, x.Genre });
             builder.Property("Name").HasMaxLength(150).IsRequired();
             builder.Property("Author").HasMaxLength(20).IsRequired();
-            
+            builder.HasData(new Book() { Author = "Leha", Genre = "Action", ISBN = "123-123-123-123", Name = "Matesha", PageNumber = 123, CreatedAt = DateTime.UtcNow });
 
         }
     }

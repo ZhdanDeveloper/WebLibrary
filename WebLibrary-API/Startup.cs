@@ -32,7 +32,7 @@ namespace WebLibrary_API
 
             services.AddAutoMapper();
             services.AddServices();
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(x=>x.JsonSerializerOptions.PropertyNamingPolicy = null);
             services.AddDbContext<LibraryContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
                 
