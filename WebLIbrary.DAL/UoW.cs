@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using WebLIbrary.DAL.Repositories.Interfaces;
-
-namespace WebLIbrary.DAL
+﻿using WebLibrary.DAL.Repositories.Interfaces;
+namespace WebLibrary.DAL
 {
     public class UoW : IUoW
     {

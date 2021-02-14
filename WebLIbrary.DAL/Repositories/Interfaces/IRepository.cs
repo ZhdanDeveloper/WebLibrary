@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
-
-namespace WebLIbrary.DAL.Repositories.Interfaces
+namespace WebLibrary.DAL.Repositories.Interfaces
 {
     public interface IRepository<T> where T : class
     {
@@ -14,6 +12,5 @@ namespace WebLIbrary.DAL.Repositories.Interfaces
         Task<T> UpdateAsync(T item);
         Task<T> DeleteAsync(T item);
         Task<T> GetByWhere(Expression<Func<T, bool>> expression);
-
     }
 }

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using WebLIbrary.DAL.Models;
-using System.Text;
-
-namespace WebLIbrary.DAL.Contexts
+﻿using Microsoft.EntityFrameworkCore;
+using WebLibrary.DAL.Models;
+namespace WebLibrary.DAL.Contexts
 {
     public class LibraryContext : DbContext
     {

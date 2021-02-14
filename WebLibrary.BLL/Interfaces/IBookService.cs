@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using WebLibrary.BLL.DTOs;
-using WebLibray.BLL.DTOs;
-
-namespace WebLibray.BLL.Interfaces
+namespace WebLibrary.BLL.Interfaces
 {
     public interface IBookService
     {
@@ -13,7 +9,5 @@ namespace WebLibray.BLL.Interfaces
         Task<List<BookDTO>> GetAllBooks();
         Task<BookDTO> CreateBook(BookCreateDTO book);
         Task<BookDTO> DeleteBookById(int Id);
-
-
     }
 }

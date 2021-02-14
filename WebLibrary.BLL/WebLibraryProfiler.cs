@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AutoMapper;
+﻿using AutoMapper;
 using WebLibrary.BLL.DTOs;
-using WebLIbrary.DAL.Models;
-using WebLibray.BLL.DTOs;
-
-namespace WebLibray.BLL
+using WebLibrary.DAL.Models;
+namespace WebLibrary.BLL
 {
     class WebLibraryProfiler : Profile
     {
@@ -15,8 +10,6 @@ namespace WebLibray.BLL
             CreateMap<Book, BookDTO>();
             CreateMap<Book, BookDTO>().ReverseMap();
             CreateMap<BookCreateDTO, Book>();
-
-
         }
     }
 }

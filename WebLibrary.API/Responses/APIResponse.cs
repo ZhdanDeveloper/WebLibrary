@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace WebLibrary_API.Responses
 {
-    public class ApiResponse
+    public class APIResponse
     {
-        public ApiResponse(bool oK, int statusCode, string message, string[] errors, object data)
+        public APIResponse(bool oK, int statusCode, string message, string[] errors, object data)
         {
             OK = oK;
             StatusCode = statusCode;

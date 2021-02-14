@@ -1,15 +1,11 @@
 ﻿using AutoMapper;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using WebLibrary.BLL.DTOs;
-using WebLIbrary.DAL;
-using WebLIbrary.DAL.Models;
-using WebLibray.BLL.DTOs;
-using WebLibray.BLL.Interfaces;
-
-namespace WebLibray.BLL.Services
+using WebLibrary.BLL.Interfaces;
+using WebLibrary.DAL;
+using WebLibrary.DAL.Models;
+namespace WebLibrary.BLL.Services
 {
     public class BookService : IBookService
     {

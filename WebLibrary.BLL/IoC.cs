@@ -1,15 +1,11 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using WebLIbrary.DAL;
-using WebLIbrary.DAL.Repositories;
-using WebLIbrary.DAL.Repositories.Interfaces;
-using WebLibray.BLL.Interfaces;
-using WebLibray.BLL.Services;
-using AutoMapper;
-
-namespace WebLibray.BLL
+﻿using AutoMapper;
+using Microsoft.Extensions.DependencyInjection;
+using WebLibrary.BLL.Interfaces;
+using WebLibrary.BLL.Services;
+using WebLibrary.DAL;
+using WebLibrary.DAL.Repositories;
+using WebLibrary.DAL.Repositories.Interfaces;
+namespace WebLibrary.BLL
 {
     public static class IoC
     {
@@ -19,8 +15,6 @@ namespace WebLibray.BLL
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<IBookService, BookService>();
         }
-
-
         public static void AddAutoMapper(this IServiceCollection services)
         {
             var MappingConfig = new MapperConfiguration(x => x.AddProfile(new WebLibraryProfiler()));

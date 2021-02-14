@@ -2,7 +2,7 @@
  
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
-    "WebLibrary_API": {
+    "Kestrel": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/books",

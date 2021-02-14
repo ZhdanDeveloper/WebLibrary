@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLibrary.API", "WebLibrary-API\WebLibrary.API.csproj", "{1874B9D5-2441-4BD0-A66B-DA1E093DC3F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebLibrary.API", "WebLibrary.API\WebLibrary.API.csproj", "{1874B9D5-2441-4BD0-A66B-DA1E093DC3F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLibray.DAL", "WebLIbrary.DAL\WebLibray.DAL.csproj", "{74FCFF89-C7AB-4CC5-A318-D2C90FE7637A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebLibrary.DAL", "WebLibrary.DAL\WebLibrary.DAL.csproj", "{74FCFF89-C7AB-4CC5-A318-D2C90FE7637A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLibrary.BLL", "WebLibray.BLL\WebLibrary.BLL.csproj", "{EDAC4D0F-43EE-4A15-ADE0-7FB125876EFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebLibrary.BLL", "WebLibrary.BLL\WebLibrary.BLL.csproj", "{EDAC4D0F-43EE-4A15-ADE0-7FB125876EFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

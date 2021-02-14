@@ -1,14 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
-using WebLIbrary.DAL.Contexts;
-using WebLIbrary.DAL.Repositories.Interfaces;
-
-namespace WebLIbrary.DAL.Repositories
+using WebLibrary.DAL.Contexts;
+using WebLibrary.DAL.Repositories.Interfaces;
+namespace WebLibrary.DAL.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
