@@ -10,6 +10,13 @@ namespace WebLibrary.BLL
             CreateMap<Book, BookDTO>();
             CreateMap<Book, BookDTO>().ReverseMap();
             CreateMap<BookCreateDTO, Book>();
+            CreateMap<BookCreateDTO, Book>().ReverseMap();
+            CreateMap<BookCreateDTO, BookDTO>();
+            CreateMap<BookCreateDTO, BookDTO>().ReverseMap();
+
+
+          
+
         }
     }
 }

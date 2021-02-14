@@ -9,5 +9,8 @@ namespace WebLibrary.BLL.Interfaces
         Task<List<BookDTO>> GetAllBooks();
         Task<BookDTO> CreateBook(BookCreateDTO book);
         Task<BookDTO> DeleteBookById(int Id);
+
+        Task<BookDTO> UpdateBook(BookCreateDTO book, int id);
+
     }
 }

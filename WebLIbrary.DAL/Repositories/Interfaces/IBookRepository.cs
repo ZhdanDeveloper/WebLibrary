@@ -5,5 +5,6 @@ namespace WebLibrary.DAL.Repositories.Interfaces
     public interface IBookRepository : IRepository<Book>
     {
         Task<Book> GetForDeleting(int Id);
+        Task<Book> GetForUpdating(int Id);
     }
 }

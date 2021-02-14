@@ -13,5 +13,10 @@ namespace WebLibrary.DAL.Repositories
         {
             return await _context.Books.FirstOrDefaultAsync(x => x.Id == Id);
         }
+
+        public async Task<Book> GetForUpdating(int Id)
+        {
+            return await _context.Books.FirstOrDefaultAsync(x => x.Id == Id);
+        }
     }
 }

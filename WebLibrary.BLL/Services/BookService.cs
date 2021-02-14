@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using WebLibrary.BLL.DTOs;
@@ -40,5 +41,18 @@ namespace WebLibrary.BLL.Services
         {
             return mapper.Map<BookDTO>(await UoW.BookRepository.GetByIdAsync(Id));
         }
+
+        public async Task<BookDTO> UpdateBook(BookCreateDTO book, int id)
+        {
+     
+            Book BookToUpdate = mapper.Map<Book>(book);
+            BookToUpdate.Id = id;
+             await UoW.BookRepository.UpdateAsync(BookToUpdate);
+            return mapper.Map<BookDTO>(BookToUpdate);
+            
+           
+        }
+
+     
     }
 }
