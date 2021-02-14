@@ -12,6 +12,8 @@ namespace WebLibray.BLL
         public WebLibraryProfiler()
         {
             CreateMap<Book, BookDTO>();
+            CreateMap<Book, BookDTO>().ReverseMap();
+
         }
     }
 }
